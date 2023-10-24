@@ -9,6 +9,6 @@ sudo docker build -t acados_casadi_ml .
 ```
 ## Run container
 ```
-sudo docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm -it --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --name acados_casadi_ml_container --gpus all --cpuset-cpus="0" -v ~/:/epvelasco acados_casadi_ml
+sudo docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm -it --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --name acados_casadi_ml_container --cpuset-cpus="0" -v ~/:/epvelasco acados_casadi_ml
 
 ```
